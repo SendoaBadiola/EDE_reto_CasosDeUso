@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_H4RFEFjAEeyv_eRmau6SlA" name="retoEDE">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_H7AQAFjAEeyv_eRmau6SlA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_fZprwFjAEeyv_eRmau6SlA" name="Usuarios">
+    <generalization xmi:type="uml:Generalization" xmi:id="_0eimEGFsEeyYEpcG8KQqHA" general="_hPG8wGFsEeyYEpcG8KQqHA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jZ8RYFjAEeyv_eRmau6SlA" name="Empresas">
+    <generalization xmi:type="uml:Generalization" xmi:id="_zaFfcGFsEeyYEpcG8KQqHA" general="_hPG8wGFsEeyYEpcG8KQqHA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ka1tsFjAEeyv_eRmau6SlA" name="Adminisración"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_q0TKIFjAEeyv_eRmau6SlA" name="Diseñar app" useCase="_wKD2MFvnEeyWEeJ2jLv4rA _EETXEFvoEeyWEeJ2jLv4rA _LQU44FvoEeyWEeJ2jLv4rA _ZxMr4FvpEeyWEeJ2jLv4rA _aHDAEFvpEeyWEeJ2jLv4rA _gzzL8FvpEeyWEeJ2jLv4rA _hWeTkGFtEeyYEpcG8KQqHA">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_wKD2MFvnEeyWEeJ2jLv4rA" name="Acceder a la app(CUC-1)" subject="_q0TKIFjAEeyv_eRmau6SlA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_LQU44FvoEeyWEeJ2jLv4rA" name="Realizar seguimiento(CUU-2)" subject="_q0TKIFjAEeyv_eRmau6SlA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ZxMr4FvpEeyWEeJ2jLv4rA" name="Controlar peticiones de usuarios(CUA-1)" subject="_q0TKIFjAEeyv_eRmau6SlA">
+      <include xmi:type="uml:Include" xmi:id="_S4R5wGFvEeyYEpcG8KQqHA" addition="_EETXEFvoEeyWEeJ2jLv4rA"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_aHDAEFvpEeyWEeJ2jLv4rA" name="Controlar respuestas de empresas(CUA-2)" subject="_q0TKIFjAEeyv_eRmau6SlA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_gzzL8FvpEeyWEeJ2jLv4rA" name="Iniciar expediente sancionador(CUA-3)" subject="_q0TKIFjAEeyv_eRmau6SlA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_EETXEFvoEeyWEeJ2jLv4rA" name="Interponer petición(CUU-1)" subject="_q0TKIFjAEeyv_eRmau6SlA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_hWeTkGFtEeyYEpcG8KQqHA" name="Gestionar solicitudes(CUE-1)" subject="_q0TKIFjAEeyv_eRmau6SlA">
+      <include xmi:type="uml:Include" xmi:id="_-9jQsGFuEeyYEpcG8KQqHA" addition="_EETXEFvoEeyWEeJ2jLv4rA"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_RBBsMFvoEeyWEeJ2jLv4rA" name="extends" client="_wKD2MFvnEeyWEeJ2jLv4rA" supplier="_EETXEFvoEeyWEeJ2jLv4rA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TovVUFvoEeyWEeJ2jLv4rA" memberEnd="_TowjclvoEeyWEeJ2jLv4rA _ToxKgFvoEeyWEeJ2jLv4rA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TowjcFvoEeyWEeJ2jLv4rA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TowjcVvoEeyWEeJ2jLv4rA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TowjclvoEeyWEeJ2jLv4rA" name="interponer petición" type="_EETXEFvoEeyWEeJ2jLv4rA" association="_TovVUFvoEeyWEeJ2jLv4rA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ToxKgFvoEeyWEeJ2jLv4rA" name="usuarios" type="_fZprwFjAEeyv_eRmau6SlA" association="_TovVUFvoEeyWEeJ2jLv4rA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UbirQFvoEeyWEeJ2jLv4rA" memberEnd="_UbkgcVvoEeyWEeJ2jLv4rA _UblHgFvoEeyWEeJ2jLv4rA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ubj5YFvoEeyWEeJ2jLv4rA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UbkgcFvoEeyWEeJ2jLv4rA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UbkgcVvoEeyWEeJ2jLv4rA" name="realizar seguimiento" type="_LQU44FvoEeyWEeJ2jLv4rA" association="_UbirQFvoEeyWEeJ2jLv4rA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UblHgFvoEeyWEeJ2jLv4rA" name="usuarios" type="_fZprwFjAEeyv_eRmau6SlA" association="_UbirQFvoEeyWEeJ2jLv4rA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lEjPcFvpEeyWEeJ2jLv4rA" memberEnd="_lElEoFvpEeyWEeJ2jLv4rA _lElEoVvpEeyWEeJ2jLv4rA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lEkdkFvpEeyWEeJ2jLv4rA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lEkdkVvpEeyWEeJ2jLv4rA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lElEoFvpEeyWEeJ2jLv4rA" name="controlar peticiones de usuarios" type="_ZxMr4FvpEeyWEeJ2jLv4rA" association="_lEjPcFvpEeyWEeJ2jLv4rA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lElEoVvpEeyWEeJ2jLv4rA" name="adminisración" type="_ka1tsFjAEeyv_eRmau6SlA" association="_lEjPcFvpEeyWEeJ2jLv4rA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mKotwFvpEeyWEeJ2jLv4rA" memberEnd="_mKqi8FvpEeyWEeJ2jLv4rA _mKqi8VvpEeyWEeJ2jLv4rA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mKp74FvpEeyWEeJ2jLv4rA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mKp74VvpEeyWEeJ2jLv4rA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mKqi8FvpEeyWEeJ2jLv4rA" name="controlar respuestas de empresas" type="_aHDAEFvpEeyWEeJ2jLv4rA" association="_mKotwFvpEeyWEeJ2jLv4rA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mKqi8VvpEeyWEeJ2jLv4rA" name="adminisración" type="_ka1tsFjAEeyv_eRmau6SlA" association="_mKotwFvpEeyWEeJ2jLv4rA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pNroAFvpEeyWEeJ2jLv4rA" name="extends" client="_aHDAEFvpEeyWEeJ2jLv4rA" supplier="_gzzL8FvpEeyWEeJ2jLv4rA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_BRgCkGFqEeyYEpcG8KQqHA" name="Include" client="_LQU44FvoEeyWEeJ2jLv4rA" supplier="_EETXEFvoEeyWEeJ2jLv4rA"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_hPG8wGFsEeyYEpcG8KQqHA" name="Cliente"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__6bakGFsEeyYEpcG8KQqHA" memberEnd="__6ed4GFsEeyYEpcG8KQqHA __6ed4WFsEeyYEpcG8KQqHA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__6dPwGFsEeyYEpcG8KQqHA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__6dPwWFsEeyYEpcG8KQqHA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__6ed4GFsEeyYEpcG8KQqHA" name="interponer petición(cuu-2)" type="_EETXEFvoEeyWEeJ2jLv4rA" association="__6bakGFsEeyYEpcG8KQqHA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__6ed4WFsEeyYEpcG8KQqHA" name="usuarios" type="_fZprwFjAEeyv_eRmau6SlA" association="__6bakGFsEeyYEpcG8KQqHA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_B1gAIGFtEeyYEpcG8KQqHA" memberEnd="_B1hOQGFtEeyYEpcG8KQqHA _B1hOQWFtEeyYEpcG8KQqHA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B1gnMGFtEeyYEpcG8KQqHA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B1gnMWFtEeyYEpcG8KQqHA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_B1hOQGFtEeyYEpcG8KQqHA" name="acceder a la app(cuu-1)" type="_wKD2MFvnEeyWEeJ2jLv4rA" association="_B1gAIGFtEeyYEpcG8KQqHA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_B1hOQWFtEeyYEpcG8KQqHA" name="cliente" type="_hPG8wGFsEeyYEpcG8KQqHA" association="_B1gAIGFtEeyYEpcG8KQqHA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_HMU64GFtEeyYEpcG8KQqHA" name="include" client="_LQU44FvoEeyWEeJ2jLv4rA" supplier="_EETXEFvoEeyWEeJ2jLv4rA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ohJKgGFtEeyYEpcG8KQqHA" memberEnd="_ohKYoWFtEeyYEpcG8KQqHA _ohKYomFtEeyYEpcG8KQqHA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ohJxkGFtEeyYEpcG8KQqHA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ohKYoGFtEeyYEpcG8KQqHA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ohKYoWFtEeyYEpcG8KQqHA" name="gestionar solicitudes(cue-2)" type="_hWeTkGFtEeyYEpcG8KQqHA" association="_ohJKgGFtEeyYEpcG8KQqHA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ohKYomFtEeyYEpcG8KQqHA" name="empresas" type="_jZ8RYFjAEeyv_eRmau6SlA" association="_ohJKgGFtEeyYEpcG8KQqHA"/>
+  </packagedElement>
+</uml:Model>
